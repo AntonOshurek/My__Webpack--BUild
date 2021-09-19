@@ -4,10 +4,10 @@ let path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './scripts/index.js',
+  entry: './src/scripts/index.js',
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/js'
+    path: __dirname + '/dist/js'
   },
   watch: true,
 
