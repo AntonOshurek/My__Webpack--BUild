@@ -1,5 +1,5 @@
 # Standart WebPack Build
-* **[gh-page](https://github.com/webpack-contrib/copy-webpack-plugin)**
+* **[gh-page](https://antonoshurek.github.io/My__Webpack--BUild/)**
 ---
 
 ## Title
