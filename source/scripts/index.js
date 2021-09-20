@@ -24,3 +24,4 @@ data.saysome();
 window.addEventListener('DOMContentLoaded', () => {
     saydefault();
 });
+
