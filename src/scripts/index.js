@@ -20,3 +20,7 @@ console.log(ren);
 import * as data from './block-1';
 console.log(`${data.foo} or ${data.bar}`); //we get an object and work with it as an object
 data.saysome();
+
+window.addEventListener('DOMContentLoaded', () => {
+    saydefault();
+});
