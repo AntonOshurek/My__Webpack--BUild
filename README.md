@@ -17,7 +17,7 @@
 ***additional tools that were used during development***
 
 * **[WebPack](https://webpack.js.org/)**
-* * **[copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin)**
+* **[copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin)**
 
 ---
 
