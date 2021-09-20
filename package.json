@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "gulp build",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
     "not dead",
     "not ie <= 11"
   ],
+  "engines": {
+    "node": "^12 || ^14"
+  },
   "homepage": "https://github.com/AntonOshurek/My__Webpack--BUild#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -28,7 +32,22 @@
     "babel-loader": "^8.2.2",
     "core-js": "^2.6.12",
     "webpack": "^5.53.0",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+
+    "autoprefixer": "10.2.5",
+    "browser-sync": "2.26.14",
+    "del": "^6.0.0",
+    "gulp": "4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-less": "4.0.1",
+    "gulp-libsquoosh": "^1.0.9",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "8.2.8",
+    "postcss-csso": "^5.0.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1"
