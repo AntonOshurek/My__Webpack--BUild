@@ -17,7 +17,8 @@
 ***additional tools that were used during development***
 
 * **[WebPack](https://webpack.js.org/)**
-* **[copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin)**
+* **[Babel](https://babeljs.io/docs/en/usage)**
+* * **[Core-JS](https://github.com/zloirock/core-js)**
 
 ---
 
