@@ -18,7 +18,7 @@
 
 * **[WebPack](https://webpack.js.org/)**
 * **[Babel](https://babeljs.io/docs/en/usage)**
-* * **[Core-JS](https://github.com/zloirock/core-js)**
+* **[Core-JS](https://github.com/zloirock/core-js)**
 
 ---
 
@@ -28,6 +28,6 @@
 * **npm clone ~~repository name~~**
 * **npm i**
 * **npm run build**
-* * **npm start**
+* **npm start**
 
 ---
