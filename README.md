@@ -26,6 +26,7 @@
 * **instal node.js**
 * **npm clone ~~repository name~~**
 * **npm i**
-* **npx webpack**
+* **npm run build**
+* * **npm start**
 
 ---
