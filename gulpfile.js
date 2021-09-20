@@ -11,7 +11,9 @@ const gulp = require('gulp'),
       terser = require('gulp-terser'),
       squoosh = require('gulp-libsquoosh'),
       webp = require("gulp-webp"),
-      del = require('del');
+      del = require('del'),
+
+      const webpack = require("webpack-stream");
 
 // Styles
 const styles = () => {
@@ -29,6 +31,39 @@ const styles = () => {
     .pipe(sync.stream());
 }
 exports.styles = styles;
+
+//webpack
+const webpack =() => {
+    return gulp.src("./src/scripts/index.js")
+    .pipe(webpack({
+        mode: 'development',
+        output: {
+            filename: 'script.js'
+        },
+        watch: false,
+        devtool: "source-map",
+        module: {
+            rules: [
+              {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: [['@babel/preset-env', {
+                        debug: true,
+                        corejs: 3,
+                        useBuiltIns: "usage"
+                    }]]
+                  }
+                }
+              }
+            ]
+          }
+    }))
+    .pipe(gulp.dest(dist))
+    .on("end", browsersync.reload);
+};
 
 //HTML
 const html = () => {
@@ -124,6 +159,7 @@ const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
+    webpack,
     styles,
     html,
     createWebp,
@@ -138,6 +174,7 @@ exports.default = gulp.series(
   copy,
   copyImages,
   gulp.parallel(
+    webpack,
     styles,
     html,
     createWebp,
