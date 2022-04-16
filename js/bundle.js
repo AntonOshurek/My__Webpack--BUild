@@ -10,11 +10,11 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "saysome": function() { return /* binding */ saysome; },
+/* harmony export */   "bar": function() { return /* binding */ bar; },
 /* harmony export */   "default": function() { return /* binding */ saydefault; },
 /* harmony export */   "foo": function() { return /* binding */ foo; },
-/* harmony export */   "bar": function() { return /* binding */ bar; },
-/* harmony export */   "rename": function() { return /* binding */ rename; }
+/* harmony export */   "rename": function() { return /* binding */ rename; },
+/* harmony export */   "saysome": function() { return /* binding */ saysome; }
 /* harmony export */ });
 //old
 
